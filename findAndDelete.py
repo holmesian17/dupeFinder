@@ -58,7 +58,7 @@ def checkImageHashes():
         if 0 <= answer <= 30:
             # log the files that have been deleted
             with open("duplicates.txt", "a") as f:
-                f.write("File: " + str(cur[0]) + ", Deviation: " +str(answer))
+                f.write("File: " + str(cur[0]) + ", Deviation: " +str(answer) + "\n")
                 f.close()
             # create filepath
             toDelete = os.path.join(directory, cur[0])
